@@ -1,0 +1,57 @@
+{
+  "name": "Ellaism",
+  "dataDir": "ellaism",
+  "engine": {
+    "Ethash": {
+      "params": {
+        "gasLimitBoundDivisor": "0x0400",
+        "minimumDifficulty": "0x020000",
+        "difficultyBoundDivisor": "0x0800",
+        "durationLimit": "0x0d",
+        "blockReward": "0x4563918244F40000",
+        "registrar" : "0xc6d9d2cd449a754c494264e1809c50e34d64562b",
+        "homesteadTransition": "0x0",
+        "bombDefuseTransition": "0x0",
+        "eip150Transition": "0x0",
+        "eip155Transition": "0x0",
+        "eip160Transition": "0x0",
+        "ecip1017EraRounds": 10000000,
+
+        "eip161abcTransition": "0x7fffffffffffffff",
+        "eip161dTransition": "0x7fffffffffffffff"
+      }
+    }
+  },
+  "params": {
+    "accountStartNonce": "0x00",
+    "maximumExtraDataSize": "0x20",
+    "minGasLimit": "0x1388",
+    "networkID": "0x40",
+    "chainID": "0x40",
+    "eip98Transition": "0x7fffffffffffff",
+    "eip86Transition": "0x7fffffffffffff"
+  },
+  "genesis": {
+    "seal": {
+      "ethereum": {
+        "nonce": "0x0000000000000040",
+        "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "difficulty": "0x40000000",
+    "author": "0x0000000000000000000000000000000000000000",
+    "timestamp": "0x00",
+    "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "extraData": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "gasLimit": "0x1388"
+  },
+  "nodes": [
+    "enode://816bff950121884a5de03332d6a1dd67d89c9a99fa85338148b47f33378b1093e532ab5e63bafe156c568d270fe43c30d62c690481799c62414ac996d5908755@108.61.198.224:30303"
+  ],
+  "accounts": {
+    "0000000000000000000000000000000000000001": { "builtin": { "name": "ecrecover", "pricing": { "linear": { "base": 3000, "word": 0 } } } },
+    "0000000000000000000000000000000000000002": { "builtin": { "name": "sha256", "pricing": { "linear": { "base": 60, "word": 12 } } } },
+    "0000000000000000000000000000000000000003": { "builtin": { "name": "ripemd160", "pricing": { "linear": { "base": 600, "word": 120 } } } },
+    "0000000000000000000000000000000000000004": { "builtin": { "name": "identity", "pricing": { "linear": { "base": 15, "word": 3 } } } }
+  }
+}
