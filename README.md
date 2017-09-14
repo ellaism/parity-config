@@ -1,6 +1,6 @@
 # Ellaism
 
-Ellaism is an Ethereum-like network with no pre-mine and no continent hard forks. Additional features are:
+Ellaism is an Ethereum-like network with no pre-mine and no contentious hard forks. Additional features are:
 
 * Monetary policy. A reduction of 20% mining rewards happens every 10 million blocks. The total number of coins will be around 280 million Ella.
 * No difficulty bomb.
