@@ -10,6 +10,19 @@ Ellaism is an Ethereum-like network with no pre-mine and no contentious hard for
 
 Install [Parity](https://github.com/paritytech/parity/releases) from Parity's official website. Download the [Ellaism config file](https://raw.githubusercontent.com/ellaism/parity-config/master/ellaism.json). Run Parity with `parity --chain ellaism.json`.
 
+If you're running Parity for a mining pool, it is recommended to run with `--usd-per-tx 0` because Parity cannot calculate the correct ELLA-USD rate.
+
+```
+parity --chain "/path/to/ellaism.json" --usd-per-tx 0
+```
+
+To set it in your Parity config file, add the following:
+
+```
+[mining]
+usd_per_tx = "0"
+```
+
 ## Windows Mining Instruction
 
 Install [Parity](https://github.com/paritytech/parity/releases) from Parity's official website. After installation, please first close the auto-started Parity from the system tray.
