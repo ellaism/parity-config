@@ -1,0 +1,65 @@
+{
+  "name": "Shikinseki",
+  "dataDir": "shikinseki",
+  "engine": {
+    "authorityRound": {
+      "params": {
+        "gasLimitBoundDivisor": "0x0400",
+        "stepDuration": "4",
+        "blockReward": "0x4563918244F40000",
+        "homesteadTransition": "0x0",
+        "bombDefuseTransition": "0x0",
+        "eip150Transition": "0x0",
+        "eip155Transition": "0x0",
+        "eip160Transition": "0x0",
+        "ecip1017EraRounds": 1000000,
+
+        "eip161abcTransition": "0x7fffffffffffffff",
+        "eip161dTransition": "0x7fffffffffffffff",
+
+        "validateScoreTransition": 0,
+        "validateReceiptsTransition": 0,
+        "validateStepTransition": 0,
+        "validators": {
+          "multi": {
+            "0": { "list": [ "0x2cbb505641e0c1b0ada0cf0b045014383de94576" ] }
+          }
+        }
+      }
+    }
+  },
+  "params": {
+    "gasLimitBoundDivisor": "0x0400",
+    "accountStartNonce": "0x00",
+    "maximumExtraDataSize": "0x20",
+    "minGasLimit": "0x1388",
+    "networkID": "0x4040",
+    "chainID": "0x4040",
+    "eip155Transition": "0x0",
+    "eip98Transition": "0x7fffffffffffff",
+    "eip86Transition": "0x7fffffffffffff",
+    "validateScoreTransition": 0,
+    "validateReceiptsTransition": 0,
+    "validateStepTransition": 0
+  },
+  "genesis": {
+    "seal": {
+      "authorityRound": {
+        "step": "0x0",
+        "signature": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "difficulty": "0x20000",
+    "gasLimit": "0x5B8D80"
+  },
+  "nodes": [
+    "enode://6851fb6dc0d0ef389e79740d5444184c502b8d7aa17ed19cb87874527ddb2c3d452335f0435923976613ea77349473a0ecc95373ac0b60d06ee982361f24644c@94.130.237.158:50505"
+  ],
+  "accounts": {
+    "0000000000000000000000000000000000000001": { "builtin": { "name": "ecrecover", "pricing": { "linear": { "base": 3000, "word": 0 } } } },
+    "0000000000000000000000000000000000000002": { "builtin": { "name": "sha256", "pricing": { "linear": { "base": 60, "word": 12 } } } },
+    "0000000000000000000000000000000000000003": { "builtin": { "name": "ripemd160", "pricing": { "linear": { "base": 600, "word": 120 } } } },
+    "0000000000000000000000000000000000000004": { "builtin": { "name": "identity", "pricing": { "linear": { "base": 15, "word": 3 } } } },
+    "2cbb505641e0c1b0ada0cf0b045014383de94576": { "balance": "1606938044258990275541962092341162602522202993782792835301376" }
+  }
+}
