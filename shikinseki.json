@@ -12,7 +12,7 @@
         "eip150Transition": "0x0",
         "eip155Transition": "0x0",
         "eip160Transition": "0x0",
-        "eip100bTransition": "0x0",
+        "eip100bTransition": 1340000,
         "ecip1017EraRounds": 1000000,
 
         "eip161abcTransition": "0x7fffffffffffffff",
@@ -43,8 +43,8 @@
     "validateReceiptsTransition": 0,
     "validateStepTransition": 0,
     "eip140Transition": 1340000,
-	"eip211Transition": 1340000,
-	"eip214Transition": 1340000,
+    "eip211Transition": 1340000,
+    "eip214Transition": 1340000,
     "eip658Transition": 1340000,
     "wasmActivationTransition": 1340000
   },
